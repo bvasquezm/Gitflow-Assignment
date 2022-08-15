@@ -1,4 +1,4 @@
-import most_retweets, top_users
+import most_retweets, top_users, top_days
 
 if __name__ == "__main__":
 	# Example: 1, 2 or 3 are valid inputs
@@ -19,7 +19,7 @@ if __name__ == "__main__":
         elif response == "2":
             result = top_users.top_users_by_tweets()
         elif response == "3":
-            print("Top 10 days with the most tweets")
+            result = top_days.top_days_by_tweets()
         elif response == "4":
             print("Top 10 hashtags most used")
     except ValueError:
