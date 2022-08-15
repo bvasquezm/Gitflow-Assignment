@@ -1,4 +1,4 @@
-import most_retweets, top_users, top_days
+import most_retweets, top_users, top_days, top_hashtags
 
 if __name__ == "__main__":
 	# Example: 1, 2 or 3 are valid inputs
@@ -21,7 +21,7 @@ if __name__ == "__main__":
         elif response == "3":
             result = top_days.top_days_by_tweets()
         elif response == "4":
-            print("Top 10 hashtags most used")
+            result = top_hashtags.top_hashtags()
     except ValueError:
         print("Invalid input or result")
     finally:
